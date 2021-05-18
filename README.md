@@ -257,5 +257,5 @@ make start
 make test
 ```
 
-[gh-actions-badge]: https://github.com/tarantool/tarantool-operator/workflows/Test/badge.svg
-[gh-actions-url]: https://github.com/tarantool/tarantool-operator/actions
+[gh-actions-badge]: https://github.com/to6ka/tarantool-operator/workflows/Test/badge.svg
+[gh-actions-url]: https://github.com/to6ka/tarantool-operator/actions

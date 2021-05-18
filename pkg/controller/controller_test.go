@@ -15,11 +15,11 @@ import (
 
     "sigs.k8s.io/controller-runtime/pkg/client"
 
-    tarantoolv1alpha1 "github.com/tarantool/tarantool-operator/pkg/apis/tarantool/v1alpha1"
-    helpers "github.com/tarantool/tarantool-operator/test/helpers"
+    tarantoolv1alpha1 "github.com/to6ka/tarantool-operator/pkg/apis/tarantool/v1alpha1"
+    helpers "github.com/to6ka/tarantool-operator/test/helpers"
 
     "github.com/machinebox/graphql"
-    "github.com/tarantool/tarantool-operator/pkg/topology"
+    "github.com/to6ka/tarantool-operator/pkg/topology"
 )
 
 var _ = Describe("controllers integration testing", func() {

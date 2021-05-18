@@ -120,7 +120,7 @@ The app is fully functional and can respond to the HTTP GET request ``/hello``.
    the instance start. This is required for correct operations on Kubernetes. For
    versions below 2.3.0, an application must be customized independently.
    See the
-   `example <https://github.com/tarantool/tarantool-operator/blob/master/examples/kv/key-value-store/init.lua#L27-L71>`_
+   `example <https://github.com/to6ka/tarantool-operator/blob/master/examples/kv/key-value-store/init.lua#L27-L71>`_
    of how to do this.
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1115,7 +1115,7 @@ article.
 
 To do this, you will need to change the ``tarantool/cartridge`` chart. You
 can find it
-`here <https://github.com/tarantool/tarantool-operator/tree/master/examples/kv/helm-chart>`__.
+`here <https://github.com/to6ka/tarantool-operator/tree/master/examples/kv/helm-chart>`__.
 Add a new container with ``nginx`` to the ``ReplicasetTemplate`` which can be
 found in the ``templates/deployment.yaml`` file.
 
@@ -1182,8 +1182,8 @@ charts and the image of your application inside the internal network.
 
 You can download the charts from the following links:
 
-* `tarantool-operator v0.0.8 <https://github.com/tarantool/tarantool-operator/releases/download/tarantool-operator-0.0.8/tarantool-operator-0.0.8.tgz>`_
-* `cartridge v0.0.8 <https://github.com/tarantool/tarantool-operator/releases/download/cartridge-0.0.8/cartridge-0.0.8.tgz>`_.
+* `tarantool-operator v0.0.8 <https://github.com/to6ka/tarantool-operator/releases/download/tarantool-operator-0.0.8/tarantool-operator-0.0.8.tgz>`_
+* `cartridge v0.0.8 <https://github.com/to6ka/tarantool-operator/releases/download/cartridge-0.0.8/cartridge-0.0.8.tgz>`_.
 
 Next, you need to pack a Docker image with the ``tarantool-operator``.
 First, let's pull the required version from the Docker Hub:

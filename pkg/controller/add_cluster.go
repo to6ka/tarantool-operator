@@ -1,7 +1,7 @@
 package controller
 
 import (
-	"github.com/tarantool/tarantool-operator/pkg/controller/cluster"
+	"github.com/to6ka/tarantool-operator/pkg/controller/cluster"
 )
 
 func init() {

@@ -1,7 +1,7 @@
 package controller
 
 import (
-	"github.com/tarantool/tarantool-operator/pkg/controller/role"
+	"github.com/to6ka/tarantool-operator/pkg/controller/role"
 )
 
 func init() {

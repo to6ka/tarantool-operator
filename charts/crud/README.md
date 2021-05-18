@@ -165,4 +165,4 @@ And pass this values to `helm install`:
 $ helm install crud-app -f crud_values.yaml ./charts/crud/ --namespace tarantool --create-namespace
 ```
 
-**NOTE** - all specified fields are required. Look at [this](https://github.com/tarantool/tarantool-operator/issues/44) ticket.
+**NOTE** - all specified fields are required. Look at [this](https://github.com/to6ka/tarantool-operator/issues/44) ticket.

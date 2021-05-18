@@ -13,15 +13,15 @@ import (
 
 func GetOpenAPIDefinitions(ref common.ReferenceCallback) map[string]common.OpenAPIDefinition {
 	return map[string]common.OpenAPIDefinition{
-		"github.com/tarantool/tarantool-operator/pkg/apis/tarantool/v1alpha1.Cluster":                  schema_pkg_apis_tarantool_v1alpha1_Cluster(ref),
-		"github.com/tarantool/tarantool-operator/pkg/apis/tarantool/v1alpha1.ClusterSpec":              schema_pkg_apis_tarantool_v1alpha1_ClusterSpec(ref),
-		"github.com/tarantool/tarantool-operator/pkg/apis/tarantool/v1alpha1.ClusterStatus":            schema_pkg_apis_tarantool_v1alpha1_ClusterStatus(ref),
-		"github.com/tarantool/tarantool-operator/pkg/apis/tarantool/v1alpha1.ReplicasetTemplate":       schema_pkg_apis_tarantool_v1alpha1_ReplicasetTemplate(ref),
-		"github.com/tarantool/tarantool-operator/pkg/apis/tarantool/v1alpha1.ReplicasetTemplateSpec":   schema_pkg_apis_tarantool_v1alpha1_ReplicasetTemplateSpec(ref),
-		"github.com/tarantool/tarantool-operator/pkg/apis/tarantool/v1alpha1.ReplicasetTemplateStatus": schema_pkg_apis_tarantool_v1alpha1_ReplicasetTemplateStatus(ref),
-		"github.com/tarantool/tarantool-operator/pkg/apis/tarantool/v1alpha1.Role":                     schema_pkg_apis_tarantool_v1alpha1_Role(ref),
-		"github.com/tarantool/tarantool-operator/pkg/apis/tarantool/v1alpha1.RoleSpec":                 schema_pkg_apis_tarantool_v1alpha1_RoleSpec(ref),
-		"github.com/tarantool/tarantool-operator/pkg/apis/tarantool/v1alpha1.RoleStatus":               schema_pkg_apis_tarantool_v1alpha1_RoleStatus(ref),
+		"github.com/to6ka/tarantool-operator/pkg/apis/tarantool/v1alpha1.Cluster":                  schema_pkg_apis_tarantool_v1alpha1_Cluster(ref),
+		"github.com/to6ka/tarantool-operator/pkg/apis/tarantool/v1alpha1.ClusterSpec":              schema_pkg_apis_tarantool_v1alpha1_ClusterSpec(ref),
+		"github.com/to6ka/tarantool-operator/pkg/apis/tarantool/v1alpha1.ClusterStatus":            schema_pkg_apis_tarantool_v1alpha1_ClusterStatus(ref),
+		"github.com/to6ka/tarantool-operator/pkg/apis/tarantool/v1alpha1.ReplicasetTemplate":       schema_pkg_apis_tarantool_v1alpha1_ReplicasetTemplate(ref),
+		"github.com/to6ka/tarantool-operator/pkg/apis/tarantool/v1alpha1.ReplicasetTemplateSpec":   schema_pkg_apis_tarantool_v1alpha1_ReplicasetTemplateSpec(ref),
+		"github.com/to6ka/tarantool-operator/pkg/apis/tarantool/v1alpha1.ReplicasetTemplateStatus": schema_pkg_apis_tarantool_v1alpha1_ReplicasetTemplateStatus(ref),
+		"github.com/to6ka/tarantool-operator/pkg/apis/tarantool/v1alpha1.Role":                     schema_pkg_apis_tarantool_v1alpha1_Role(ref),
+		"github.com/to6ka/tarantool-operator/pkg/apis/tarantool/v1alpha1.RoleSpec":                 schema_pkg_apis_tarantool_v1alpha1_RoleSpec(ref),
+		"github.com/to6ka/tarantool-operator/pkg/apis/tarantool/v1alpha1.RoleStatus":               schema_pkg_apis_tarantool_v1alpha1_RoleStatus(ref),
 	}
 }
 
@@ -52,19 +52,19 @@ func schema_pkg_apis_tarantool_v1alpha1_Cluster(ref common.ReferenceCallback) co
 					},
 					"spec": {
 						SchemaProps: spec.SchemaProps{
-							Ref: ref("github.com/tarantool/tarantool-operator/pkg/apis/tarantool/v1alpha1.ClusterSpec"),
+							Ref: ref("github.com/to6ka/tarantool-operator/pkg/apis/tarantool/v1alpha1.ClusterSpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
-							Ref: ref("github.com/tarantool/tarantool-operator/pkg/apis/tarantool/v1alpha1.ClusterStatus"),
+							Ref: ref("github.com/to6ka/tarantool-operator/pkg/apis/tarantool/v1alpha1.ClusterStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/tarantool/tarantool-operator/pkg/apis/tarantool/v1alpha1.ClusterSpec", "github.com/tarantool/tarantool-operator/pkg/apis/tarantool/v1alpha1.ClusterStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/to6ka/tarantool-operator/pkg/apis/tarantool/v1alpha1.ClusterSpec", "github.com/to6ka/tarantool-operator/pkg/apis/tarantool/v1alpha1.ClusterStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -140,14 +140,14 @@ func schema_pkg_apis_tarantool_v1alpha1_ReplicasetTemplate(ref common.ReferenceC
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
-							Ref: ref("github.com/tarantool/tarantool-operator/pkg/apis/tarantool/v1alpha1.ReplicasetTemplateStatus"),
+							Ref: ref("github.com/to6ka/tarantool-operator/pkg/apis/tarantool/v1alpha1.ReplicasetTemplateStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/tarantool/tarantool-operator/pkg/apis/tarantool/v1alpha1.ReplicasetTemplateStatus", "k8s.io/api/apps/v1.StatefulSetSpec", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/to6ka/tarantool-operator/pkg/apis/tarantool/v1alpha1.ReplicasetTemplateStatus", "k8s.io/api/apps/v1.StatefulSetSpec", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -202,19 +202,19 @@ func schema_pkg_apis_tarantool_v1alpha1_Role(ref common.ReferenceCallback) commo
 					},
 					"spec": {
 						SchemaProps: spec.SchemaProps{
-							Ref: ref("github.com/tarantool/tarantool-operator/pkg/apis/tarantool/v1alpha1.RoleSpec"),
+							Ref: ref("github.com/to6ka/tarantool-operator/pkg/apis/tarantool/v1alpha1.RoleSpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
-							Ref: ref("github.com/tarantool/tarantool-operator/pkg/apis/tarantool/v1alpha1.RoleStatus"),
+							Ref: ref("github.com/to6ka/tarantool-operator/pkg/apis/tarantool/v1alpha1.RoleStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/tarantool/tarantool-operator/pkg/apis/tarantool/v1alpha1.RoleSpec", "github.com/tarantool/tarantool-operator/pkg/apis/tarantool/v1alpha1.RoleStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/to6ka/tarantool-operator/pkg/apis/tarantool/v1alpha1.RoleSpec", "github.com/to6ka/tarantool-operator/pkg/apis/tarantool/v1alpha1.RoleStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -233,7 +233,7 @@ func schema_pkg_apis_tarantool_v1alpha1_RoleSpec(ref common.ReferenceCallback) c
 					},
 					"storageTemplate": {
 						SchemaProps: spec.SchemaProps{
-							Ref: ref("github.com/tarantool/tarantool-operator/pkg/apis/tarantool/v1alpha1.ReplicasetTemplate"),
+							Ref: ref("github.com/to6ka/tarantool-operator/pkg/apis/tarantool/v1alpha1.ReplicasetTemplate"),
 						},
 					},
 					"selector": {
@@ -246,7 +246,7 @@ func schema_pkg_apis_tarantool_v1alpha1_RoleSpec(ref common.ReferenceCallback) c
 			},
 		},
 		Dependencies: []string{
-			"github.com/tarantool/tarantool-operator/pkg/apis/tarantool/v1alpha1.ReplicasetTemplate", "k8s.io/apimachinery/pkg/apis/meta/v1.LabelSelector"},
+			"github.com/to6ka/tarantool-operator/pkg/apis/tarantool/v1alpha1.ReplicasetTemplate", "k8s.io/apimachinery/pkg/apis/meta/v1.LabelSelector"},
 	}
 }
 

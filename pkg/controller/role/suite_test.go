@@ -22,7 +22,7 @@ import (
     "sigs.k8s.io/controller-runtime/pkg/envtest"
     logf "sigs.k8s.io/controller-runtime/pkg/runtime/log"
     // +kubebuilder:scaffold:imports
-    "github.com/tarantool/tarantool-operator/pkg/apis"
+    "github.com/to6ka/tarantool-operator/pkg/apis"
 )
 
 // These tests use Ginkgo (BDD-style Go testing framework). Refer to

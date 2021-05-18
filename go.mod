@@ -1,4 +1,4 @@
-module github.com/tarantool/tarantool-operator
+module github.com/to6ka/tarantool-operator
 
 require (
 	bou.ke/monkey v1.0.2
