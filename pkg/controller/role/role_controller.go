@@ -288,8 +288,6 @@ func CreateStatefulSetFromTemplate(replicasetNumber int, name string, role *tara
 	sts.Namespace = role.GetNamespace()
 	sts.ObjectMeta.Labels = role.GetLabels()
 
-	sts.Spec.UpdateStrategy = appsv1.StatefulSetUpdateStrategy{Type: "OnDelete"}
-
 	reqLogger.Info("Update Strategy: %s", sts.Spec.UpdateStrategy.Type)
 
 	for k, v := range role.GetLabels() {
